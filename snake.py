@@ -125,6 +125,7 @@ def main():
 
     snake = Snake()
     food = Food()
+    highestScore = 0
 
     while (True):
         clock.tick(10)
@@ -135,12 +136,19 @@ def main():
             snake.length += 1
             food.random_spawn()
             snake.score += 1
+        if snake.score > highestScore:
+            highestScore = snake.score
         snake.draw(surface)
         food.draw(surface)
         screen.blit(surface, (0, 0))
-        text = pygame.font.SysFont("monospace", 15).render(
-            "Score: " + str(snake.score), True, (0, 0, 0))
-        screen.blit(text, (0, 0))
+        textScore = ("Score: " + str(snake.score))
+        textHighestScore = ("Highest Score: " + str(highestScore))
+        randerScore = pygame.font.SysFont("monospace", 15).render(
+            textScore, True, (0, 0, 0))
+        randerHighestScore = pygame.font.SysFont(
+            "monospace", 15).render(textHighestScore, True, (0, 0, 0))
+        screen.blit(randerScore, (0, 0))
+        screen.blit(randerHighestScore, (0, 20))
         pygame.display.update()
 
 
