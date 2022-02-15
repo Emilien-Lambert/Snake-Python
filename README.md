@@ -1,6 +1,6 @@
 # Snake-Python
 
-Reproduction of Snake game in Pyhton.
+Realization of the snake game in python
 
 Install the dependency:
 
