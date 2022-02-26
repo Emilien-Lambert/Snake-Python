@@ -1,14 +1,18 @@
 # Snake-Python
 
-## Description 
+## Description
+
 Realization of the snake game in python
 
 ## Result
-![](snake.gif)
+
+<p style="text-align: center">
+  <img src="./snake.gif" />
+</p>
 
 ## How to use
 
-### Install the dependency:
+### Install the dependency
 
 ```shell
 $ pip install pygame
