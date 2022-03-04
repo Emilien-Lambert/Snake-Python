@@ -6,7 +6,7 @@ Realization of the snake game in python
 
 ## Result
 
-<p style="text-align: center">
+<p align="center">
   <img src="./snake.gif" />
 </p>
 
